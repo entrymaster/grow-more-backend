@@ -13,7 +13,7 @@ app.use("/v1", routes);
 app.use(passport.initialize())
 passport.use(jwtStrategy);
 
-const port = 8081;
+const port = 3000;
 
 mongoose.connect(url).then(() => {
 
