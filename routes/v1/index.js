@@ -2,7 +2,7 @@ const express = require("express");
 const router = express.Router();
 const CropRoute=require("./crops.route")
 const authRoute=require("./auth.route")
-const modelRoute=require("./model.route")
+// const modelRoute=require("./model.route")
 
 // router.get("/", (req, res)=>{
 //     res.send("Faisal");
