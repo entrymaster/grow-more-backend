@@ -59,12 +59,12 @@ const loginUserWithEmailAndPassword = async (email, password) => {
 
 
     if (!user) {
-        throw new Error("Incorrect email or password")
+        throw new Error("Incorrect  User")
     }
 
     const if_password = await user.isPasswordMatch(password)
     if (!if_password) {
-        throw new Error("Incorrect email or password")
+        throw new Error("Incorrect password")
     }
 
     return user;
